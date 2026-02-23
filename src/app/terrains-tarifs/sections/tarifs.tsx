@@ -81,7 +81,7 @@ export function Tarifs() {
         <FadeIn delay={0.2} className="mt-10 text-center">
           <motion.div whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.97 }} className="inline-block">
             <Link
-              href="/contact"
+              href="#reservation"
               className="group inline-flex items-center gap-2 rounded-full bg-tribe-gold px-8 py-4 text-sm font-semibold text-tribe-black transition-shadow hover:shadow-[0_0_30px_rgba(201,169,110,0.3)]"
             >
               Réserver un terrain

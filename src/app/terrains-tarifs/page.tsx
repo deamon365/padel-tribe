@@ -4,6 +4,7 @@ import { Installations } from "./sections/installations";
 import { Tarifs } from "./sections/tarifs";
 import { Abonnements } from "./sections/abonnements";
 import { Horaires } from "./sections/horaires";
+import { Reservation } from "./sections/reservation";
 
 export const metadata: Metadata = {
   title: "Terrains & Tarifs — 6 terrains indoor premium | Padel Tribe",
@@ -17,6 +18,7 @@ export default function TerrainsTarifs() {
       <TerrainsHero />
       <Installations />
       <Tarifs />
+      <Reservation />
       <Abonnements />
       <Horaires />
     </>
