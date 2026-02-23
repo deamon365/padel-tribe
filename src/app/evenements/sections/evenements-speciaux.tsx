@@ -29,13 +29,13 @@ const specials = [
 
 export function EvenementsSpeciaux() {
   return (
-    <section id="tournois" className="bg-tribe-cream py-24 lg:py-32">
+    <section id="tournois" className="bg-tribe-dark-light py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <FadeIn className="text-center">
           <span className="text-sm font-medium uppercase tracking-[0.2em] text-tribe-gold">
             À ne pas manquer
           </span>
-          <h2 className="mt-4 text-3xl font-bold tracking-tight text-tribe-black md:text-5xl">
+          <h2 className="mt-4 text-3xl font-bold tracking-tight text-white md:text-5xl">
             Événements spéciaux
           </h2>
         </FadeIn>

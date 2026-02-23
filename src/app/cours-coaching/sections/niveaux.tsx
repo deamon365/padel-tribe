@@ -48,23 +48,23 @@ const niveaux = [
 
 export function Niveaux() {
   return (
-    <section className="bg-white py-24 lg:py-32">
+    <section className="bg-tribe-dark-light py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <FadeIn className="text-center">
           <span className="text-sm font-medium uppercase tracking-[0.2em] text-tribe-gold">
             Programmes
           </span>
-          <h2 className="mt-4 text-3xl font-bold tracking-tight text-tribe-black md:text-5xl">
+          <h2 className="mt-4 text-3xl font-bold tracking-tight text-white md:text-5xl">
             Un programme pour
             <br />
-            <span className="text-tribe-green">chaque niveau</span>
+            <span className="text-tribe-gold">chaque niveau</span>
           </h2>
         </FadeIn>
 
         <StaggerContainer className="mt-16 grid gap-8 md:grid-cols-2">
           {niveaux.map((item) => (
             <StaggerItem key={item.level}>
-              <AnimatedCard className="group flex h-full flex-col rounded-2xl border border-tribe-black/5 bg-tribe-cream/30 p-8 transition-colors duration-300 hover:border-tribe-green/20 hover:shadow-lg">
+              <AnimatedCard className="group flex h-full flex-col rounded-2xl border border-white/10 bg-white/5 p-8 transition-all duration-300 hover:border-tribe-gold/20 hover:bg-white/10">
                 <div className="flex items-start gap-4">
                   <div
                     className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-xl ${item.color}`}
@@ -75,13 +75,13 @@ export function Niveaux() {
                     <span className="text-xs font-medium uppercase tracking-wider text-tribe-gold">
                       {item.tag}
                     </span>
-                    <h3 className="mt-1 text-xl font-bold text-tribe-black">
+                    <h3 className="mt-1 text-xl font-bold text-white">
                       {item.level}
                     </h3>
                   </div>
                 </div>
 
-                <p className="mt-4 flex-1 text-sm leading-relaxed text-tribe-black/60">
+                <p className="mt-4 flex-1 text-sm leading-relaxed text-white/50">
                   {item.description}
                 </p>
 
@@ -89,7 +89,7 @@ export function Niveaux() {
                   {item.details.map((detail) => (
                     <span
                       key={detail}
-                      className="rounded-full bg-tribe-black/5 px-3 py-1 text-xs font-medium text-tribe-black/60"
+                      className="rounded-full bg-white/10 px-3 py-1 text-xs font-medium text-white/50"
                     >
                       {detail}
                     </span>

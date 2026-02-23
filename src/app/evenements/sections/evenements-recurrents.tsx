@@ -50,13 +50,13 @@ const events = [
 
 export function EvenementsRecurrents() {
   return (
-    <section className="bg-tribe-cream py-24 lg:py-32">
+    <section className="bg-tribe-dark py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <FadeIn className="text-center">
           <span className="text-sm font-medium uppercase tracking-[0.2em] text-tribe-gold">
             Chaque semaine
           </span>
-          <h2 className="mt-4 text-3xl font-bold tracking-tight text-tribe-black md:text-5xl">
+          <h2 className="mt-4 text-3xl font-bold tracking-tight text-white md:text-5xl">
             Nos événements
           </h2>
         </FadeIn>
@@ -64,17 +64,17 @@ export function EvenementsRecurrents() {
         <StaggerContainer className="mt-16 grid gap-8 md:grid-cols-2">
           {events.map((event) => (
             <StaggerItem key={event.title}>
-              <AnimatedCard className="flex h-full flex-col rounded-2xl bg-white p-8 shadow-sm transition-shadow duration-300 hover:shadow-lg">
+              <AnimatedCard className="flex h-full flex-col rounded-2xl border border-white/10 bg-white/5 p-8 transition-all duration-300 hover:border-tribe-gold/30 hover:bg-white/10">
                 <div className="flex items-start gap-4">
                   <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-tribe-green">
                     <event.icon className="h-6 w-6 text-white" />
                   </div>
-                  <h3 className="text-xl font-bold text-tribe-black">
+                  <h3 className="text-xl font-bold text-white">
                     {event.title}
                   </h3>
                 </div>
 
-                <p className="mt-4 flex-1 text-sm leading-relaxed text-tribe-black/60">
+                <p className="mt-4 flex-1 text-sm leading-relaxed text-white/50">
                   {event.description}
                 </p>
 
@@ -82,12 +82,12 @@ export function EvenementsRecurrents() {
                   {event.details.map((detail) => (
                     <div
                       key={detail.label}
-                      className="rounded-lg bg-tribe-cream px-3 py-2"
+                      className="rounded-lg bg-white/5 px-3 py-2"
                     >
-                      <span className="block text-[10px] font-medium uppercase tracking-wider text-tribe-black/40">
+                      <span className="block text-[10px] font-medium uppercase tracking-wider text-white/30">
                         {detail.label}
                       </span>
-                      <span className="text-sm font-semibold text-tribe-black">
+                      <span className="text-sm font-semibold text-white">
                         {detail.value}
                       </span>
                     </div>

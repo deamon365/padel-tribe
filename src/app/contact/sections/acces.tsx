@@ -24,13 +24,13 @@ const accessModes = [
 
 export function Acces() {
   return (
-    <section className="bg-tribe-cream py-24 lg:py-32">
+    <section className="bg-tribe-dark py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <FadeIn className="text-center">
           <span className="text-sm font-medium uppercase tracking-[0.2em] text-tribe-gold">
             Accès
           </span>
-          <h2 className="mt-4 text-3xl font-bold tracking-tight text-tribe-black md:text-5xl">
+          <h2 className="mt-4 text-3xl font-bold tracking-tight text-white md:text-5xl">
             Comment venir
           </h2>
         </FadeIn>
@@ -55,16 +55,16 @@ export function Acces() {
         <div className="mt-12 grid gap-6 md:grid-cols-3">
           {accessModes.map((mode, i) => (
             <FadeIn key={mode.label} delay={0.15 + i * 0.1}>
-              <div className="rounded-2xl bg-white p-6 shadow-sm">
+              <div className="rounded-2xl border border-white/10 bg-white/5 p-6 transition-all hover:border-tribe-gold/30 hover:bg-white/10">
                 <div className="flex items-center gap-3">
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-tribe-green/10">
-                    <mode.icon className="h-5 w-5 text-tribe-green" />
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-tribe-green/20">
+                    <mode.icon className="h-5 w-5 text-tribe-gold" />
                   </div>
-                  <h3 className="font-semibold text-tribe-black">
+                  <h3 className="font-semibold text-white">
                     {mode.label}
                   </h3>
                 </div>
-                <p className="mt-3 text-sm text-tribe-black/60">
+                <p className="mt-3 text-sm text-white/50">
                   {mode.description}
                 </p>
                 {mode.note && (

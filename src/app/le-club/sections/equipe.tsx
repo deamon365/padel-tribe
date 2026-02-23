@@ -28,13 +28,13 @@ const team = [
 
 export function Equipe() {
   return (
-    <section id="equipe" className="bg-tribe-cream py-24 lg:py-32">
+    <section id="equipe" className="bg-tribe-dark py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <FadeIn className="text-center">
           <span className="text-sm font-medium uppercase tracking-[0.2em] text-tribe-gold">
             Les visages de la Tribu
           </span>
-          <h2 className="mt-4 text-3xl font-bold tracking-tight text-tribe-black md:text-5xl">
+          <h2 className="mt-4 text-3xl font-bold tracking-tight text-white md:text-5xl">
             L&apos;équipe Padel Tribe
           </h2>
         </FadeIn>
@@ -42,7 +42,7 @@ export function Equipe() {
         <StaggerContainer className="mt-16 grid gap-8 md:grid-cols-3" staggerDelay={0.15}>
           {team.map((member) => (
             <StaggerItem key={member.role}>
-              <AnimatedCard className="group overflow-hidden rounded-2xl bg-white shadow-sm transition-shadow duration-300 hover:shadow-lg">
+              <AnimatedCard className="group overflow-hidden rounded-2xl border border-white/10 bg-white/5 transition-all duration-300 hover:border-tribe-gold/30 hover:bg-white/10">
                 {/* Photo placeholder */}
                 <div className="relative flex h-64 items-center justify-center overflow-hidden bg-gradient-to-br from-tribe-green to-tribe-green-light">
                   <span className="text-6xl font-bold text-white/30 transition-transform duration-500 group-hover:scale-110">
@@ -55,13 +55,13 @@ export function Equipe() {
                       {member.badge}
                     </span>
                   )}
-                  <h3 className="mt-3 text-lg font-semibold text-tribe-black">
+                  <h3 className="mt-3 text-lg font-semibold text-white">
                     {member.name}
                   </h3>
-                  <p className="text-sm font-medium text-tribe-green">
+                  <p className="text-sm font-medium text-tribe-gold">
                     {member.role}
                   </p>
-                  <p className="mt-3 text-sm leading-relaxed text-tribe-black/60">
+                  <p className="mt-3 text-sm leading-relaxed text-white/50">
                     {member.description}
                   </p>
                 </div>

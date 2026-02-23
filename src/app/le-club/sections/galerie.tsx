@@ -13,13 +13,13 @@ const galleryItems = [
 
 export function Galerie() {
   return (
-    <section className="bg-white py-24 lg:py-32">
+    <section className="bg-tribe-dark-light py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <FadeIn className="text-center">
           <span className="text-sm font-medium uppercase tracking-[0.2em] text-tribe-gold">
             Galerie
           </span>
-          <h2 className="mt-4 text-3xl font-bold tracking-tight text-tribe-black md:text-5xl">
+          <h2 className="mt-4 text-3xl font-bold tracking-tight text-white md:text-5xl">
             Le club en images
           </h2>
         </FadeIn>
@@ -45,7 +45,7 @@ export function Galerie() {
         </div>
 
         <FadeIn delay={0.3}>
-          <p className="mt-8 text-center text-sm text-tribe-black/40">
+          <p className="mt-8 text-center text-sm text-white/30">
             Photos à venir — ces emplacements accueilleront les photos du club.
           </p>
         </FadeIn>

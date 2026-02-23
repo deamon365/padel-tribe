@@ -32,13 +32,13 @@ const valeurs = [
 
 export function Valeurs() {
   return (
-    <section id="valeurs" className="bg-white py-24 lg:py-32">
+    <section id="valeurs" className="bg-tribe-dark-light py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <FadeIn className="text-center">
           <span className="text-sm font-medium uppercase tracking-[0.2em] text-tribe-gold">
             Ce qui nous anime
           </span>
-          <h2 className="mt-4 text-3xl font-bold tracking-tight text-tribe-black md:text-5xl">
+          <h2 className="mt-4 text-3xl font-bold tracking-tight text-white md:text-5xl">
             Nos valeurs
           </h2>
         </FadeIn>
@@ -46,15 +46,15 @@ export function Valeurs() {
         <StaggerContainer className="mt-16 grid gap-8 md:grid-cols-2">
           {valeurs.map((v) => (
             <StaggerItem key={v.title}>
-              <AnimatedCard className="flex gap-6 rounded-2xl border border-tribe-black/5 bg-tribe-cream/50 p-8 transition-colors duration-300 hover:border-tribe-green/20 hover:shadow-md">
+              <AnimatedCard className="flex gap-6 rounded-2xl border border-white/10 bg-white/5 p-8 transition-all duration-300 hover:border-tribe-gold/20 hover:bg-white/10">
                 <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-tribe-green">
                   <v.icon className="h-6 w-6 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold text-tribe-black">
+                  <h3 className="text-lg font-semibold text-white">
                     {v.title}
                   </h3>
-                  <p className="mt-2 text-sm leading-relaxed text-tribe-black/60">
+                  <p className="mt-2 text-sm leading-relaxed text-white/50">
                     {v.description}
                   </p>
                 </div>

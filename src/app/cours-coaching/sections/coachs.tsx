@@ -29,13 +29,13 @@ const coachs = [
 
 export function Coachs() {
   return (
-    <section className="bg-tribe-cream py-24 lg:py-32">
+    <section className="bg-tribe-dark py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <FadeIn className="text-center">
           <span className="text-sm font-medium uppercase tracking-[0.2em] text-tribe-gold">
             L&apos;équipe
           </span>
-          <h2 className="mt-4 text-3xl font-bold tracking-tight text-tribe-black md:text-5xl">
+          <h2 className="mt-4 text-3xl font-bold tracking-tight text-white md:text-5xl">
             Nos coachs
           </h2>
         </FadeIn>
@@ -43,7 +43,7 @@ export function Coachs() {
         <div className="mt-16 grid gap-8 md:grid-cols-3">
           {coachs.map((coach, i) => (
             <FadeIn key={i} delay={i * 0.15}>
-              <div className="group overflow-hidden rounded-2xl bg-white shadow-sm transition-all hover:shadow-lg">
+              <div className="group overflow-hidden rounded-2xl border border-white/10 bg-white/5 transition-all hover:border-tribe-gold/30 hover:bg-white/10">
                 {/* Photo placeholder */}
                 <div className="flex h-56 items-center justify-center bg-gradient-to-br from-tribe-green to-tribe-green-light">
                   <span className="text-5xl font-bold text-white/30">
@@ -56,16 +56,16 @@ export function Coachs() {
                       {coach.badge}
                     </span>
                   )}
-                  <h3 className="mt-3 text-lg font-semibold text-tribe-black">
+                  <h3 className="mt-3 text-lg font-semibold text-white">
                     {coach.name}
                   </h3>
-                  <p className="text-sm font-medium text-tribe-green">
+                  <p className="text-sm font-medium text-tribe-gold">
                     {coach.specialty}
                   </p>
 
                   <div className="mt-4 flex gap-2">
                     <Quote className="h-4 w-4 shrink-0 text-tribe-gold/50" />
-                    <p className="text-sm italic leading-relaxed text-tribe-black/50">
+                    <p className="text-sm italic leading-relaxed text-white/40">
                       {coach.quote}
                     </p>
                   </div>

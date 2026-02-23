@@ -35,6 +35,8 @@
   --color-tribe-green: #1a472a;
   --color-tribe-green-light: #2d6b40;
   --color-tribe-black: #0a0a0a;
+  --color-tribe-dark: #111111;
+  --color-tribe-dark-light: #161616;
   --color-tribe-cream: #f5f5f0;
   --color-tribe-gold: #c9a96e;
   --color-tribe-gold-light: #d4bc8a;
@@ -42,8 +44,8 @@
 
 :root {
   --radius: 0.625rem;
-  --background: #f5f5f0;
-  --foreground: #0a0a0a;
+  --background: #0a0a0a;
+  --foreground: #f5f5f0;
   --card: #ffffff;
   --card-foreground: #0a0a0a;
   --popover: #ffffff;

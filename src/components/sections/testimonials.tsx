@@ -26,23 +26,23 @@ const testimonials = [
 
 export function Testimonials() {
   return (
-    <section className="bg-tribe-cream py-24 lg:py-32">
+    <section className="bg-tribe-dark py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <FadeIn className="text-center">
           <span className="text-sm font-medium uppercase tracking-[0.2em] text-tribe-gold">
             Témoignages
           </span>
-          <h2 className="mt-4 text-3xl font-bold tracking-tight text-tribe-black md:text-5xl">
+          <h2 className="mt-4 text-3xl font-bold tracking-tight text-white md:text-5xl">
             Ce que dit
             <br />
-            <span className="text-tribe-green">la Tribu</span>
+            <span className="text-tribe-gold">la Tribu</span>
           </h2>
         </FadeIn>
 
         <StaggerContainer className="mt-16 grid gap-8 md:grid-cols-3" staggerDelay={0.15}>
           {testimonials.map((testimonial) => (
             <StaggerItem key={testimonial.name}>
-              <AnimatedCard className="flex h-full flex-col rounded-2xl bg-white p-8 shadow-sm transition-shadow duration-300 hover:shadow-lg">
+              <AnimatedCard className="flex h-full flex-col rounded-2xl border border-white/10 bg-white/5 p-8 transition-all duration-300 hover:border-tribe-gold/30 hover:bg-white/10">
                 {/* Stars */}
                 <div className="flex gap-1">
                   {Array.from({ length: testimonial.rating }).map((_, j) => (
@@ -54,21 +54,21 @@ export function Testimonials() {
                 </div>
 
                 {/* Quote */}
-                <p className="mt-6 flex-1 text-sm leading-relaxed text-tribe-black/70">
+                <p className="mt-6 flex-1 text-sm leading-relaxed text-white/60">
                   &ldquo;{testimonial.text}&rdquo;
                 </p>
 
                 {/* Author */}
-                <div className="mt-8 border-t border-tribe-black/5 pt-6">
+                <div className="mt-8 border-t border-white/10 pt-6">
                   <div className="flex items-center gap-4">
                     <div className="flex h-10 w-10 items-center justify-center rounded-full bg-tribe-green text-sm font-bold text-white">
                       {testimonial.name.charAt(0)}
                     </div>
                     <div>
-                      <div className="text-sm font-semibold text-tribe-black">
+                      <div className="text-sm font-semibold text-white">
                         {testimonial.name}
                       </div>
-                      <div className="text-xs text-tribe-black/40">
+                      <div className="text-xs text-white/40">
                         {testimonial.role}
                       </div>
                     </div>
