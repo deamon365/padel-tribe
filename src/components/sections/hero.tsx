@@ -94,7 +94,7 @@ export function Hero() {
         >
           <motion.div whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.97 }}>
             <Link
-              href="/contact"
+              href="/terrains-tarifs#reservation"
               className="group relative inline-block overflow-hidden rounded-full bg-tribe-gold px-8 py-4 text-sm font-semibold text-tribe-black transition-shadow hover:shadow-[0_0_40px_rgba(201,169,110,0.4)]"
             >
               <span className="relative z-10">Réserver un terrain</span>

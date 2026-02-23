@@ -61,7 +61,7 @@ export function Navbar() {
               </Link>
             ))}
             <Link
-              href="/contact"
+              href="/terrains-tarifs#reservation"
               className="rounded-full bg-tribe-gold px-6 py-2.5 text-sm font-semibold text-tribe-black transition-all hover:bg-tribe-gold-light hover:shadow-lg"
             >
               Réserver
@@ -107,7 +107,7 @@ export function Navbar() {
                 </motion.div>
               ))}
               <Link
-                href="/contact"
+                href="/terrains-tarifs#reservation"
                 onClick={() => setIsOpen(false)}
                 className="mt-4 rounded-full bg-tribe-gold px-6 py-3 text-center text-sm font-semibold text-tribe-black"
               >

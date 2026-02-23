@@ -39,7 +39,7 @@ export function CTA() {
           <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <motion.div whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.97 }}>
               <Link
-                href="/contact"
+                href="/terrains-tarifs#reservation"
                 className="group inline-flex items-center gap-2 rounded-full bg-tribe-gold px-8 py-4 text-sm font-semibold text-tribe-black transition-shadow hover:shadow-[0_0_40px_rgba(201,169,110,0.4)]"
               >
                 Réserver maintenant

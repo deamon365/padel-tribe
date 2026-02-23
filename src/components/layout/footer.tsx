@@ -10,7 +10,7 @@ const footerLinks = {
     { href: "/contact", label: "Accès" },
   ],
   Jouer: [
-    { href: "/contact", label: "Réserver un terrain" },
+    { href: "/terrains-tarifs#reservation", label: "Réserver un terrain" },
     { href: "/cours-coaching", label: "Cours & Coaching" },
     { href: "/evenements", label: "Événements" },
     { href: "/evenements", label: "Team Building" },
