@@ -7,7 +7,6 @@ import { Menu, X } from "lucide-react";
 import { Logo } from "@/components/logo";
 
 const navLinks = [
-  { href: "/", label: "Accueil" },
   { href: "/le-club", label: "Le Club" },
   { href: "/terrains-tarifs", label: "Terrains & Tarifs" },
   { href: "/cours-coaching", label: "Cours" },
